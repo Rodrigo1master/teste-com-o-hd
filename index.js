@@ -11,8 +11,13 @@ function CreatCircle(radius) {
  };
 }
 
-const circle1 = CreatCircle(1);
-console.log(circle1)
+//constructor function
 
-const circle2 = CreatCircle(2);
-console.log(circle2)
+function Circle(radius) {
+this.radius = radius;
+this.draw = function() {
+    console.log('draw')
+ }
+}
+
+const cirecle = new Circle(1);
