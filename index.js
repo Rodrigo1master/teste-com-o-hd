@@ -2,17 +2,17 @@
 console.log('testando');
 
 
-const circle = {
-radius: 1,
-location: {
-    x: 1,
-    y: 1
-},
-isVisible: true,
-draw: function () {
-   console.log('draw');
+function CreatCircle(radius) {
+ return {
+     radius,
+     draw() {
+         console.log ('draw');
+     }
+ };
 }
-    
-};
 
-circle.draw();
+const circle1 = CreatCircle(1);
+console.log(circle1)
+
+const circle2 = CreatCircle(2);
+console.log(circle2)
