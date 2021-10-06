@@ -1,8 +1,14 @@
 
 
-let numbers = [1,2,3,4]
-let another = numbers
-numbers = []
+const numbers = [1,2,3,4];
+const joined = numbers.join(',')
+console.log(joined)
 
-console.log(numbers);
-console.log(another)
+
+
+const message = 'testando a mensagem';
+const parts = message.split(' ')
+console.log(parts)
+
+const combined =parts.join('-');
+console.log(combined);
