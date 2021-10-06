@@ -1,13 +1,8 @@
 
 
-const numbers = [1,2,3,4]
+let numbers = [1,2,3,4]
+let another = numbers
+numbers = []
 
-//end
-const last = numbers.pop();
-
-//beginning
-const first = numbers.shift ();
-console.log (numbers)
-
-//middle
-numbers.splice(2,1);
+console.log(numbers);
+console.log(another)
