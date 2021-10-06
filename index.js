@@ -1,14 +1,17 @@
 
 
-const numbers = [1,2,3,4];
-const joined = numbers.join(',')
-console.log(joined)
+const courses = [
+    {id: 1 , name: 'node.js'},
+    {id: 2 , name: 'javaScript'},
+];
 
+courses.sort(function(a,b) {
+    const nameA = a.name.toLocaleLowerCase();
+    const nameB = b.name.toLocaleLowerCase();
 
+    if (a.name < b.name) return-1;
+    if (a.name > b.name) return 1;
+    return 0;
+});
 
-const message = 'testando a mensagem';
-const parts = message.split(' ')
-console.log(parts)
-
-const combined =parts.join('-');
-console.log(combined);
+console.log(courses)
