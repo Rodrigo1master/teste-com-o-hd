@@ -1,18 +1,7 @@
 
-//function declaration
-
-function walk () {
-    console.log('walk');
+function sum(discount, ...prices){
+    const total = prices.reduce((a, b) => a+b );
+    return total * (1 - discount);
 }
 
-//function expression
-
-let run = function() {
-    console.log('run')
-};
-
-let move = run;
-
-move();
-run();
-walk()
+console.log(sum(0.1, 20, 30));
