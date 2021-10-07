@@ -1,18 +1,9 @@
 
 //every elements
 
-const numbers = [1 , 2 ,3 ,4];
+const numbers = [1 , -2 ,3 ,4];
 
-const allPositive = numbers.every(function(value){
- return value >= 0;
-});
-
-console.log(allPositive)
-//first element
-
-const atLeastOnePositive = numbers.some(function(value) {
-    return value >=0;
-});
-
+const filtered = numbers.filter(value => value >=0);
+console.log(filtered)
 
 
