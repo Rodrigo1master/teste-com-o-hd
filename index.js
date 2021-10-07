@@ -3,7 +3,9 @@
 
 const numbers = [1 , -2 ,3 ,4];
 
-const filtered = numbers.filter(value => value >=0);
-console.log(filtered)
+const itens = numbers
+ .filter(n => n >= 0)
+ .map (n => ({value:n}))
 
+ console.log(itens)
 
